@@ -1,0 +1,120 @@
+/* Color */
+$primary-color: #000000;
+$secondary-color: #ffffff;
+$third-color: #5aac02;
+$fourth-color: #827575;
+$fifth-color: #575757;
+$sixth-color: #dae6e6;
+$seventh-color: #353535;
+$eighth-color: #0091ff;
+$ninth-color: #e9e4e8;
+$tenth-color: #f8f8f8;
+$star-color: #f6aa00;
+
+/* font face */
+
+
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/lpg-ProximaNova-Bold.eot');
+    src: url('../fonts/lpg-ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lpg-ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/lpg-ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/lpg-ProximaNova-Bold.ttf') format('truetype'),
+        url('../fonts/lpg-ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/lpg-ProximaNova-Regular.eot');
+    src: url('../fonts/lpg-ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lpg-ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/lpg-ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/lpg-ProximaNova-Regular.ttf') format('truetype'),
+        url('../fonts/lpg-ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('../fonts/lpg-ProximaNova-Semibold.eot');
+    src: url('../fonts/lpg-ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/lpg-ProximaNova-Semibold.woff2') format('woff2'),
+        url('../fonts/lpg-ProximaNova-Semibold.woff') format('woff'),
+        url('../fonts/lpg-ProximaNova-Semibold.ttf') format('truetype'),
+        url('../fonts/lpg-ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* fonts */
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Proxima Nova Rg'; /* 400, 700 */
+$secondary-font-semi: 'Proxima Nova Lt'; /* 600 */
+$third-font: 'Raleway', sans-serif; /* 400,600, 700 */
+
+
+/* =============== Media Queries =============== */
+@mixin media374 {
+    @media only screen and (max-width:374px) {
+        @content;
+    }
+}
+@mixin media479 {
+    @media only screen and (max-width: 479px) {
+        @content;
+    }
+}
+@mixin media575 {
+    @media only screen and (max-width: 575px) {
+        @content;
+    }
+}
+@mixin media767 {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+@mixin media991 {
+    @media only screen and (max-width: 991px) {
+        @content;
+    }
+}
+@mixin media1199 {
+    @media only screen and (max-width: 1199px) {
+        @content;
+    }
+}
+@mixin media1367 {
+    @media only screen and (max-width: 1367px) {
+        @content;
+    }
+}
+@mixin media1441 {
+    @media only screen and (max-width: 1441px) {
+        @content;
+    }
+}
+@mixin media1601 {
+    @media only screen and (max-width: 1601px) {
+        @content;
+    }
+}
+@mixin media1700 {
+    @media only screen and (max-width: 1700px) {
+        @content;
+    }
+}
+
+@mixin media1600-min {
+    @media only screen and (min-width: 1600px) {
+        @content;
+    }
+}

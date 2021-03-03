@@ -1,0 +1,109 @@
+.header{
+    .headerTop{
+        background-color: $primary-color;
+        padding: 10px 0;
+        .headerText{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $secondary-color;
+            font-weight: 700;
+            font-size: 18px;
+            @include media1601{
+                font-size: 16px;
+            }
+            @include media1367{
+                font-size: 14px;
+            }
+            @include media1199{
+                font-size: 12px;
+            }
+            @include media767{
+            }
+            img{
+                max-width: 33px;
+                margin-left: 15px;
+                @include media1601{
+                    max-width: 27px;
+                }
+                @include media1367{
+                    max-width: 25px;
+                }
+            }
+        }
+    }
+    .headerMain{
+        background-color: $secondary-color;
+        border-bottom: 1px solid #ececec;
+        padding: 35px 0 30px;
+        @include media1367{
+            padding: 30px 0 25px;
+        }
+        @include media1199{
+            padding: 25px 0 20px;
+        }
+        @include media767{
+            padding: 15px 0;
+        }
+        .headerWrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                max-width: 250px;
+                margin-left: -50px;
+                @include media1601{
+                    max-width: 220px;
+                    margin-left: -40px;
+                }
+                @include media1367{
+                    max-width: 190px;
+                    margin-left: -30px;
+                }
+                @include media1199{
+                    max-width: 150px;
+                    margin-left: -30px;
+                }
+                @include media991{
+                    max-width: 130px;
+                }
+                @include media767{
+                    max-width: 110px;
+                    margin-left: -20px;
+                }
+                @include media575{
+                    max-width: 90px;
+                    margin-left: 0;
+                }
+            }
+            .headerIconWrapper{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .headerIcons{
+                    margin: 0 -10px 0 0;
+                    max-width: 485px;
+                    @include media1601{
+                        max-width: 440px;
+                    }
+                    @include media1367{
+                        max-width: 400px;
+                    }
+                    @include media1199{
+                        max-width: 370px;
+                    }
+                    @include media991{
+                        max-width: 300px;
+                    }
+                    @include media767{
+                        max-width: 270px;
+                    }
+                    @include media575{
+                        max-width: 180px;
+                    }
+                }
+            }
+        }
+    }
+}

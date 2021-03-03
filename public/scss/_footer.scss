@@ -1,0 +1,131 @@
+.footer{
+    background-color: $secondary-color;
+    padding: 30px 0;
+    @include media1601{
+        padding: 25px 0;
+    }
+    @include media1199{
+        padding: 20px 0;
+    }
+    @include media991{
+        padding: 17px 0;
+    }
+    @include media767{
+    }
+    .footerWrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 -40px;
+        @include media1367{
+            margin: 0 -25px;
+        }
+        @include media1199{
+            margin: 0 -5px;
+        }
+        @include media991{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .logoCopyright{
+            .logo{
+                display: block;
+                max-width: 250px;
+                @include media1601{
+                    max-width: 220px;
+                }
+                @include media1367{
+                    max-width: 190px;
+                }
+                @include media1199{
+                    max-width: 150px;
+                }
+                @include media991{
+                    max-width: 130px;
+                }
+                @include media767{
+                    max-width: 110px;
+                }
+                @include media575{
+                    max-width: 90px;
+                }
+            }
+            .copyright{
+                font-family: $secondary-font;
+                color: $fourth-color;
+                margin-top: 10px;
+                font-size: 17px;
+                @include media1601{
+                    font-size: 16px;
+                }
+                @include media1367{
+                    font-size: 14px;
+                }
+                @include media1199{
+                    font-size: 13px;
+                }
+            }
+        }
+        .navWrapper{
+            display: flex;
+            align-items: center;
+            @include media991{
+                justify-content: center;
+                margin: 15px auto;
+            }
+            li{
+                margin: 0 10px;
+                a{
+                    font-family: $secondary-font;
+                    color: $primary-color;
+                    font-weight: 700;
+                    font-size: 17px;
+                    @include media1601{
+                        font-size: 16px;
+                    }
+                    @include media1199{
+                        font-size: 15px;
+                    }
+                    @include media991{
+                        font-size: 14px;
+                    }
+                    @include media767{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        .footerIcons{
+            max-width: 485px;
+            margin-left: 90px;
+            @include media1601{
+                max-width: 440px;
+                margin-left: 80px;
+            }
+            @include media1367{
+                max-width: 400px;
+                margin-left: 70px;
+            }
+            @include media1199{
+                max-width: 370px;
+                margin-left: 50px;
+            }
+            @include media991{
+                margin-left: 0;
+                max-width: 300px;
+            }
+            @include media767{
+                margin: 0 auto;
+                max-width: 270px;
+            }
+            @include media575{
+                max-width: 180px;
+            }
+        }
+    }
+}
